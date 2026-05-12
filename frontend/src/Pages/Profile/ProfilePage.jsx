@@ -41,6 +41,7 @@ export default function ProfilePage() {
                 <Avatar src={user.avatar}  size={150} radius={150} alt="it's me"/>
                 <Text>Name: {user.name}</Text>
                 <Text>Email: {user.email}</Text>
+                <Text> {new Date(user.createdAt).toLocaleDateString()}</Text>
             </Stack>
         </Container>
   )
