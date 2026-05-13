@@ -22,6 +22,7 @@ export default function ProfilePage() {
         useEffect(
         () => { fetchUser() }, []
         );
+        //console.log(user); 
        if(loading) {
         return <Loader color="blue" />;
        }

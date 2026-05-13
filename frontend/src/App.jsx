@@ -7,6 +7,7 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import { HeaderMegaMenu } from './Components/Navbar/HeaderMegaMenu';
 import ProfilePage from './Pages/Profile/ProfilePage';
 import { MantineProvider } from '@mantine/core';
+import  URLShortner  from './Pages/ShortUrl/URLShortner';
 
 
 
@@ -19,6 +20,7 @@ function App() {
             <Route path='/login' element={<LoginPage/>} />
             <Route path='/profile' element={<ProfilePage/>} />
             <Route element={<PrivateRoute/>}>
+            <Route path='/url' element={<URLShortner/>} />
 
             </Route>
         </Routes>
